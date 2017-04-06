@@ -1,6 +1,5 @@
 *.aux
 *.log
-*.sty
 *.bbl
 *.pdf
 *.out
