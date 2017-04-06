@@ -1,0 +1,139 @@
+% LaTeX source of my resume
+% =========================
+
+% Commented for easy reuse... ;)
+
+% See the `README.md` file for more info.
+
+% This file is licensed under the CC-NC-ND Creative Commons license.
+
+% Start a document with the here given default font size and paper size.
+\documentclass[11pt,a4paper]{article}
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Joseph M. Carmack, PhD Candidate}{}{Last update on \today. Prepared using \LaTeX.}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:joseph.liping@gmail.com}{joseph.liping\mbox{}@\mbox{}gmail.com}\sbull
+801.755.2771\sbull
+109 Dakota Trail Farmington AR 72730
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+\roottitle{Summary}  % a root section title
+
+%\vspace{1.3em}  % some vertical spacing
+%\begin{multicols}{2}  % open a multicolumn environment
+%	\noindent %\emph{Bruce's Summary:}
+
+	I am a researcher with a background in computational science seeking opportunities to do research in the fields of machine learning, artificial intelligence, and cognitive computing in order to both deepen and broaden my knowledge and experience.
+
+\vspace{0.5em}  % some vertical spacing
+
+%	I am a research engineer seeking an internship in applied machine learning and artificial intelligence. I firmly believe that machine learning and artificial intelligence will be integral to all important emerging technologies. I have tried and tested technical problem solving skills that are rooted in my background in physics, mathematics, and engineering and corresponding research in these fields. I have developed my own machine learning toolkit in C++ with an emphasis on deep learning. I am prepared to contribute and learn. 
+%\end{multicols}
+
+\spacedhrule{0em}{-0.4em}
+
+
+\roottitle{Education}
+
+\headedsection
+  {\href{http://comp.uark.edu/~pmillett/Members.html}{University of Arkansas}}
+  {\textsc{Fayetteville, AR}} {%
+	  \headedsubsection
+	 {PhD in Mechanical Engineering, GPA 4.0}
+	 {2013 -- 2018}
+	 {\bodytext{
+		 \begin{itemize}
+			 \item Graduate research in mesoscale materials modeling.
+			 \item Development and execution of Phase Field/Brownian dynamics C++ and Fortran codes for heterogeneous HPC architectures.
+			 \item Forming and testing hypotheses using computational models.
+          \item Experience developing simulation post processors and conducting extensive data analysis (Python/Matlab/Paraview).
+			 \item Classwork highlights include {\bf Machine Learning, GPU Programming, Advanced Numerical Methods.}
+          \item {\bf Two publications in top journals for materials research} 
+             DOI: 10.1063/1.4932191, 10.1039/c7sm00317j
+          \item {\bf Presentations:} Two conference talks at international conferences and one conference poster.
+		 \end{itemize}
+	 }}
+}
+
+\headedsection
+  {\href{http://www.byui.edu/}{Brigham Young University-Idaho}}
+  {\textsc{Rexburg, ID}} {%
+	  \headedsubsection
+	 {BSc in Physics (Minor Mathematics), GPA 3.87}
+	 {2009 -- 2013}
+	 {\bodytext{
+		 \begin{itemize}
+			 \item Classwork Highlights: {\bf Quantum Mechanics, Scientific Computing, Software Development, Numerical Analysis, PDEs}
+			 \item Sigma Pi Sigma nomination (top 5\% of my class).
+		 \end{itemize}
+	 }}
+}
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Selected Experience (Chronological)}
+
+\headedsection
+  {\href{www.inl.gov}{Idaho National Lab Research Intern}}
+  {\textsc{Idaho Falls, ID}} {%
+	  \headedsubsection
+	 {Research Assistant}
+	 {May \apo13 -- Feb \apo14}
+	 {\bodytext{
+		 \begin{itemize}
+			 \item Studied the properties of grain boundaries in Uranium Dioxide nuclear fuel via atomistic simulation.
+			 \item Gave an oral presentation describing research results at an international research conference (TMS 2014).
+		 \end{itemize}
+	 }}
+}
+
+\headedsection
+  {\href{http://www.byu.edu}{Brigham Young University}}
+  {\textsc{Provo, UT}} {%
+	  \headedsubsection
+	 {Physics REU}
+	 {May \apo12 -- Aug \apo12}
+	 {\bodytext{
+		 \begin{itemize}
+			 \item Research project in condensed matter crystallography. Applied group theory based symmetry analysis to identify complex magnetic crystal structures.
+		 \end{itemize}
+
+	 }}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+  {\bodytext{
+	  \begin{itemize}
+		  \item Proficient in {\bf Linux} and {\bf Windows} computing. Very much enjoy the command line interface!
+		  \item Software acceleration techiniques, including parallel computing {\bf   (OpenMP, MPI, CUDA)}.
+		  \item Written personal deep learning codes in C++ to implement artificial neural networks.
+	  \end{itemize}
+  }}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\vspace{0.5em}
+\inlineheadsection
+  {Honors:}
+  {Doctoral Academy Fellowship ({\bf \$40,000} over 4 years),  1st Place in university-wide poster competion}
+\end{document}
